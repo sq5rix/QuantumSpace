@@ -306,9 +306,9 @@ subdivisions = 4  # Subdivision level to increase mesh density
 
 # Call the function to create the grid
 clear_scene()
-add_camera(160, -60, 5)
-add_sun(60, 60, 60, 1000)
-add_sun(-30, -60, -30, 1000)
+add_camera(60, -80, 60)
+add_sun(60, 60, 60, 10)
+add_sun(-30, -80, -30, 10)
 _, mats = create_icosphere_grid(n, r, d, subdivisions,"SimpleStar")
 modified_materials = create_list_activated_points(mats, n)
 animate_fac_for_materials(modified_materials , start_frame=start_frame, step=n)
